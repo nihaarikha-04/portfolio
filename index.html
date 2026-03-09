@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihaarikha - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src='//cdnt.netcoresmartech.com/smartechclient.js'></script>
+    <script>
+        smartech('create', 'ADGMOT35CHFLVDHBJNIG50K96ACU6E5OQ73PPFRO4SSM6SR1Q280');
+        smartech('register', '91cfa1a62819861ea6592e9ca59ebf45');
+        smartech('identify', '');
+    </script>
+</head>
+<body>
+    <div id="gate">
+        <div class="gate-grid"></div>
+        <div class="gate-glow"></div>
+        <div class="gate-card">
+            <div class="gate-live">
+                <div class="gate-live-dot"></div>
+                Portfolio
+            </div>
+            <h2 class="gate-title">
+                Before you dive in...
+                <span>say hi.</span>
+            </h2>
+            <p class="gate-sub">Drop your details to unlock the portfolio.</p>
+
+            <div class="gate-field">
+                <label class="g-name">Name</label>
+                <input type="text" id="g-name" placeholder="Your Name" autocomplete="name" />
+            </div>
+
+            <div class="gate-field">
+                <label class="g-email">Email</label>
+                <input type="email" id="g-email" placeholder="Your Email" autocomplete="email" />
+            </div>
+
+            <div class="gate-field">
+                <label class="g-mobile">Phone Number</label>
+                <input type="tel" id="g-mobile" placeholder="Your Phone Number" autocomplete="tel" />
+            </div>
+            <p class="gate-error" id="g-error">Please fill in all fields.</p>
+            <button class="gate-button" id="g-button" onClick="unlockPortfolio()">Unlock Portfolio</button>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-logo">nihaarikha.dev</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-grid-glow"></div>
+        <p class="hero-intro">B.Tech ECM, VIT Chennai (8.90 CGPA)</p>
+        <h1>S. Nihaarikha <br><span class="dim">Full-Stack Developer</span><h1>
+        <p class="hero-sub">
+            Building end-to-end web applications with clean architecture.
+            From REST APIs to React frontends.
+        </p>   
+        <div class="hero-ctas">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#experience" class="btn-outline">Experience</a>
+        </div>
+        <div class="hero-stack">
+            <span class="stack-label">Stack</span>
+            <div class="stack-list">
+                <span class="stack-item">React</span>
+                <span class="stack-item">Node.js</span>
+                <span class="stack-item">Express</span>
+                <span class="stack-item">MongoDB</span>
+                <span class="stack-item">PostgreSQL</span>
+                <span class="stack-item">HTML</span>
+                <span class="stack-item">CSS</span>
+                <span class="stack-item">JavaScript</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section-tag">About Me</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm Nihaarikha, a final year B.Tech student in Electronics and Computer Engineering at VIT Chennai, with a current CGPA of 8.90.</p>
+                <p>I build full-stack web applications from REST APIs to proer frontends in React.js.</p>
+                <p>I've interned at Techno Kryon (Spring Boot, API Development) and ArivuEdge (frontend, live data integration).</p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-num">8.90</div>
+                    <div class="stat-label">CGPA</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">2.90</div>
+                    <div class="stat-label">Internships</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section-tag">Experience</p>
+        <div class="exp-list">
+            <div class="exp-card">
+                <div>
+                    <p class="exp-role">Application Developer Intern</p>
+                    <p class="exp-company">ArivuEdge</p>
+                    <p class="exp-description">Replicated their Edge Orchestration website by analyzing the existing site's API calls and data flow. Implemented new pages that fetch and display live data, ensuring accurate real-time representation of backend state.</p>
+                </div>
+                <div class="exp-meta">
+                    <p class="exp-date">Dec 2025 - Jan 2026</p>
+                    <p class="exp-location">Chennai</p>
+                </div>
+            </div>
+
+            <div class="exp-card">
+                <div>
+                    <p class="exp-role">Backend Development Intern</p>
+                    <p class="exp-company">Techno Kryon</p>
+                    <p class="exp-description">Contributed to a Weighment Automation project by building RESTful APIs using Spring Boot to manage consignor details, vehicle entries, and weight records — enabling seamless integration with future hardware modules.</p>
+                </div>
+                <div class="exp-meta">
+                    <p class="exp-date">Jun 2024 - Jul 2024</p>
+                    <p class="exp-location">Chennai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section-tag">Projects</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-name">Pomodoro Timer - Desktop App</h3>
+                <p class="project-description">A productivity desktop app with pixel art UI. Features a progressive candle-melting animation synced to work/break sessions, dynamic break calculation, pause/resume, and secure Electron IPC with context isolation.</p>
+                <div class="project-meta">
+                    <span class="project-stack">Electron, React.js, CSS, HTML</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-name">DevHelper - AI Snippet Saver</h3>
+                <p class="project-description">A full-stack tool to save, organize, filter, and manage code snippets with custom tags. Integrated Google GenAI to generate code and suggest improvements. Features secure auth with session management.</p>
+                <div class="project-meta">
+                    <span class="project-stack">HTML, CSS, JavaScript, Node.js, Express, MongoDB, Google GenAI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="section-tag">Skills</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <p class="skill-name">Languages</p>
+                <div class="skill-list">
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">C++</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <p class="skill-name">Frontend</p>
+                <div class="skill-list">
+                    <span class="skill-item">React</span>
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">CSS</span>
+                    <span class="skill-item">Bootstrap</span>
+                    <span class="skill-item">EJS</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <p class="skill-name">Backend</p>
+                <div class="skill-list">
+                    <span class="skill-item">Node.js</span>
+                    <span class="skill-item">Express</span>
+                    <span class="skill-item">RESTful APIs</span>
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">Auth & Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <p class="section-tag">Achievements & Leadership</p>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div>
+                    <p class="achievement-title">HX Synthetix Make-A-Thon</p>
+                    <p class="achievement-description">Secured 2nd position at the HX Synthetix Make-A-Thon hosted at VIT Chennai (2023).</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <p class="achievement-title">Design Lead - DAO Community</p>
+                    <p class="achievement-description">Core Member and Design Lead, in the community from Sept 2023 to Dec 2024.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <p class="achievement-title">Design Member - SEDS Antariksh</p>
+                    <p class="achievement-description">Design department member of SEDS Antariksh at VIT Chennai, Apr 2024 – Apr 2025.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">S. Nihaarikha</div>
+        <div class="footer-links">
+            <a href="mailto:nihaasenthil20@gmail.com">Email</a>
+            <a href="tel:+919384660680">+91 93846 60680</a>
+            <a href="https://github.com/nihaarikha04">GitHub</a>
+            <a href="https://www.linkedin.com/in/nihaarikha-s-5b617227a/">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

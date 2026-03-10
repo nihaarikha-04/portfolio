@@ -30,9 +30,9 @@ function unlockPortfolio() {
     btn.classList.add('loading');
 
     smartech('contact', '1', {
-        'pk^email': 'nihaasenthil20@gmail.com',
-        'mobile': 9384660680,
-        'Name': 'Nihaarikha',
+        'pk^email': email,
+        'mobile': mobile,
+        'Name': name,
     });
 
     setTimeout(function() {
